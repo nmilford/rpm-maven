@@ -41,9 +41,9 @@ rm -rf %{buildroot}
 
 %post
 echo
-echo "You will need to exit your shell to have ant in your default path."
+echo "You will need to exit your shell to have mvn in your default path."
 echo "Or run the following"
-echo '  export MAVEN_HOME_HOME=/opt/maven'
+echo '  export MAVEN_HOME=/opt/maven'
 echo '  export PATH=/opt/maven/bin:$PATH'
 echo
 

@@ -32,7 +32,7 @@ cp -R %{_builddir}/apache-maven-%{version}/* %{buildroot}/opt/%{name}/
 # Make it the default, dawg.
 install -d -m 755 %{buildroot}/etc/profile.d/
 %{__cat} <<EOF > %{buildroot}/etc/profile.d/%{name}.sh
-export MAVEN_HOME_HOME=/opt/%{name}
+export MAVEN_HOME=/opt/%{name}
 export PATH=/opt/%{name}/bin:$PATH
 EOF
 
